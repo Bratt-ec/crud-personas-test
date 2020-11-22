@@ -1,0 +1,255 @@
+:root{
+  --blanco: #FFFFFF;
+  --gris: #D3D3D3;
+  --gris-light: #F4F4F4;
+  --gris-medium: #A0A0A0BF;
+  --negro: #353535;
+  --negro-medium: #383838;
+  --dark: #000000;
+  --amarillo: #F5E616;
+  --dark-light: #5E5E5E;
+  --naranja: #F89110;
+  --naranja-light: #F49115;
+  --blue: #194C89;
+  /* Margenes */
+  --padidng: 1.7rem;
+  --padding-top: 1.5rem;
+  --padding-bottom: 1.5rem;
+  --padding-right: 2rem;
+  --padding-left: 1.5rem;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+   
+}
+
+.ocultar{
+  display: none;
+}
+.cancel{
+  color: brown;
+  font-size: 40px;
+  padding-top: 2%;
+  cursor: pointer;
+}
+
+body{
+  background-color: var(--gris);
+}
+
+.__header{
+  width: 100%;
+  float: left;
+}
+.header{
+  float: right;
+  padding-right: var(--padding-right);
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.opcion_buscar{ 
+  padding: var(--padidng);
+  width: 50%;
+  float: left;
+}
+.opcion_nuevo{
+  padding: var(--padidng);
+  width: 50%;
+  float: left;
+}
+.input_buscar{
+  float: left;
+
+}
+.btn-nuevo{
+  float: right;
+}
+#btn-agregar{
+color: var(--gris-light) !important;
+}
+
+.personas_contenido{
+  /* padding: var(--padidng); */
+}
+.datos_persona{
+  width: 100%;
+  float: left;
+  background-color: var(--blanco);
+  border-radius: .6rem;
+  padding: 1px;
+}
+
+.foto_perfil{
+width: 90%;
+margin: auto;
+/* height: 110px; */
+
+}
+
+.nombre_persona{
+  /* margin: auto; */
+  float: left;
+  padding-top: 20%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+
+}
+.texto_persona{
+  width: 90%;
+  float: left;
+  margin-top: 2%;
+  font-size: 14px;
+  text-align: justify;
+
+
+}
+.editar-op{
+  width: 10%;
+  float: left;
+  font-size: 30px;
+  
+  padding-left: 2%;
+  padding-top: 4%;
+}
+.botones{
+  width: 10%;
+  float: left;
+  font-size: 30px;
+  padding-left: 2%;
+  padding-top: 2%;
+
+}
+
+.content_foto{
+float: left;
+width: 11%;
+padding-left: 1%;
+}
+.content_nombre{
+  float: left;
+  width: 19%;
+
+}
+.content_opciones{
+  /* margin-top: 1%; */
+  float: left;
+  width: 70%;
+}
+.cargar-foto{
+  width: 40%;
+  height: 40%;
+}
+
+.nombre_persona_edit{
+  border-style: none;
+  width: 70%;
+  margin-top: 1%;
+}
+.texto_persona_edit{
+  border-style: none;
+  
+}
+.opciones{
+  font-size: 40px;
+  color: #194C89;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.trash{
+  color: brown;
+  align-self: flex-end;
+  
+}
+
+.modal-open .container {
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+}
+
+@media screen and (max-width: 800px){
+  .datos_persona{
+    width: 100%;
+  }  
+  .content_foto{
+    width: 50%;
+    }
+    .content_nombre{      
+      width: 50%;
+    }
+    .content_opciones{
+      width: 100%;
+    }
+    .foto_perfil{
+    width: 40%;
+    }
+    .nombre_persona{
+      padding-top: 6%;
+      font-weight: bold;
+      font-size: 30px;
+    }
+    .texto_persona{
+      width: 100%;
+      padding-right: 5%;
+      padding-left: 5%;
+      padding-top: 0%;
+    }
+    .editar-op{
+      padding-left: 47%;
+      padding-top: 0%;
+
+      font-size: 70px;
+    }
+  .opcion_buscar{ 
+    padding: var(--padidng);
+    width: 50%;
+    float: left;
+  }
+  .opcion_nuevo{
+    padding: var(--padidng);
+    width: 50%;
+    float: left;
+  }
+  /* Botones */
+  .botones{
+    
+    width: 100%;
+  }
+  .opciones{
+    font-size: 40px;
+    color: #194C89;
+    
+  }
+  
+  .trash{
+    color: brown;
+    
+  }
+}
+
+@media screen and (max-width: 600px){
+  .foto_perfil{
+    width: 70%;
+    }
+  .opcion_buscar{     
+    width: 100%;
+    padding: 1%;    
+  }
+  .input_buscar{
+    width: 100%;
+  }
+  .opcion_nuevo{
+    align-content: center;
+    width: 100%;
+    padding: 1%;
+  }
+  .btn-nuevo{
+    width: 100%;
+  }
+}
